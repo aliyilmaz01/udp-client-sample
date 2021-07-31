@@ -1,0 +1,28 @@
+{
+  "name": "udp-client-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^16.4.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "watch:build": "tsc --watch",
+    "watch:server": "nodemon './dist/index.js' --watch './dist'",
+    "start": "npm-run-all clean build --parallel watch:build watch:server --print-label"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliyilmaz01/udp-client-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliyilmaz01/udp-client-sample/issues"
+  },
+  "homepage": "https://github.com/aliyilmaz01/udp-client-sample#readme"
+}
